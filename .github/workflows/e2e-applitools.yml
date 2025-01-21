@@ -54,7 +54,7 @@ jobs:
           APPLITOOLS_SERVER_URL: 'https://eyesapi.applitools.com'
 
       - name: Cypress run
-        uses: cypress-io/github-action@d79d2d530a66e641eb4a5f227e13bc985c60b964 # v4.2.2
+        uses: cypress-io/github-action@b86ab8d33218c786a7c2d17dfea9724eb8aa8b6b # v6.7.9
         id: cypress
         with:
           start: pnpm run dev
