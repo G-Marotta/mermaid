@@ -1,0 +1,13 @@
+    A[Start Attack] --> B[Attacker Commands Botnet]
+    B --> C[Botnet Sends Flood of Requests]
+    C --> D[Server Overloaded with Requests]
+    D --> E[Legitimate Users Denied Service]
+    D --> F[Firewall/IDS Detects Unusual Traffic]
+    F --> G[Firewall Blocks or Rate-limits Bots]
+    G --> H[Server Continues to Serve Legitimate Users]
+    H --> I[End Attack]
+    
+    classDef attack fill:#f9f,stroke:#333,stroke-width:2px;
+    class A,B,C,D,E attack;
+    classDef defense fill:#bbf,stroke:#333,stroke-width:2px;
+    class F,G,H defense;
